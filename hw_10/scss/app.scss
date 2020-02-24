@@ -1,0 +1,237 @@
+$color-header: rgb(73,77,85);
+$color-darkslategray: rgb(239,240,240);
+$color-mediumturquoise: rgb(64,186,189);
+$color-palevioletred: rgb(216,98,150);
+$color-light: rgb(249,249,251);
+$color-deepskyblue: rgb(3,169,244);
+$color-royalblue: rgb(25,118,210);
+$color-green: rgb(117,193,129);
+$color-pink: rgb(234,83,149);
+$color-cyan: rgb(88,187,238);
+$color-purple: rgb(138,64,167);
+$color-orange: rgb(248,140,48);
+$color-footer: rgb(38,40,44);
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: Roboto;
+    text-align: center;
+    background: $color-light;
+}
+
+body {
+    margin-top: 250px;
+}
+
+header, main, footer, p, h1, h2, h3 div {
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+header .container-header {
+    padding: 50px;
+    background: $color-header;
+    color: $color-light;
+    line-height: 2.5;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header-icon {
+    width: 30px;
+}
+
+.text-normal {
+    color: $color-mediumturquoise;
+    font-weight: normal;
+}
+
+.text-bolt {
+    font-weight: bolt;
+}
+
+.subtitle {
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.heart {
+    color: $color-palevioletred;
+}
+
+.social-btn img {
+    width: 10px;
+}
+
+.btn-tw {
+    padding: 2px 6px;
+    background-color: $color-deepskyblue;
+    color: $color-light;
+    border-radius: 3px;
+    border: 0;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-fb {
+    padding: 2px 6px;
+    background: $color-royalblue;
+    color: $color-light;
+    border-radius: 3px;
+    border: 0;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button > span {
+    font-weight: bold;
+}
+
+.container-information {
+    padding: 60px;
+    color: $color-header;
+    line-height: 1.5;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.content > h2 {
+    font-weight: 500;
+}
+
+.content  > p {
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-download {
+    margin: 20px;
+    padding: 5px;
+    background: $color-mediumturquoise;
+    color: $color-light;
+    border-radius: 3px;
+    border: 0;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+
+}
+
+.btn-download img {
+    width: 12px;
+}
+
+.flex-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.flex-option {
+    margin: 25px 10px;
+    width: calc(30% - 2px);
+    border: 1px solid $color-darkslategray;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.flex-option:hover {
+    transform: scale(1.05);
+}
+
+.icons-information {
+    width: 30px;
+}
+
+.flex-green {
+    padding: 40px;
+    border-top: 3px solid $color-green;
+    border-radius: 3px;
+}
+
+.flex-pink {
+    padding: 40px;
+    border-top: 3px solid $color-pink;
+    border-radius: 3px;
+}
+
+.flex-royalblue {
+    padding: 40px;
+    border-top: 3px solid $color-royalblue;
+    border-radius: 3px;
+}
+
+.flex-purple {
+    padding: 40px;
+    border-top: 3px solid $color-purple;
+    border-radius: 3px;
+}
+
+.flex-mediumturquoise {
+    padding: 40px;
+    border-top: 3px solid $color-mediumturquoise;
+    border-radius: 3px;
+}
+
+.flex-orange {
+    padding: 40px;
+    border-top: 3px solid $color-orange;
+    border-radius: 3px;
+}
+
+footer {
+    padding: 20px;
+    background: $color-footer;
+    color: $color-light;
+    font-size: 14px;
+}
+
+.link-footer {
+    color: $color-mediumturquoise;
+    cursor: pointer;
+}
+
+.link-footer:hover {
+    color: $color-royalblue;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  div.flex-container {
+    width: 80%; }
+
+  .flex-container .flex-option {
+    width: calc(30% - 22px); } }
+
+
+@media screen and (min-width: 0px) and (max-width: 990px) {
+  div.flex-container {
+    width: 80%; }
+
+  .flex-container .flex-option {
+    width: calc(50% - 22px);} }
+
